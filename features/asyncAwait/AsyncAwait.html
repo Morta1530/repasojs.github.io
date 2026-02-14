@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async/Await</title>
+
+  <link rel="shortcut icon" href="/public/logosena.png" type="image/x-icon">
+
+  <!--SEO Tags-->
+  <meta name="author" content="CRUD Datos | Feature-Based + Bootstrap 5">
+  <meta name="description" content="Aplicativo web Bootstrap">
+  <meta name="keywords" content="SENA, sena, Sena">
+
+  <!--Boostrap 5 css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--css-->
+  <link rel="stylesheet" href="/src/shared/css/styles.css">
+
+  <!--icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/features/callback/callback.html">Callbacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features/promise/promise.html">Promises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features/asyncAwait/AsyncAwait.html">Async/Await</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features/destructuring/DestructuringObjs.html">Destructuring Objects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--Header-->
+
+  <header
+    class="container-fluid py-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+
+    <div>
+      <p class="h3 mb-1">Async and Await</p>
+      <p class="text-muted mb-0">async and await make promises easier. You still use promises, but you write the code like normal step by step code. async makes a function return a Promise
+        await makes a function wait for a Promise</p>
+    </div>
+  </header>
+
+
+  <!--Main-->
+
+  <main class="container-fluid">
+    <div class="row g-4">
+
+      <!-- FORM -->
+      <div class="col-12 col-lg-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-1">Numeros</h2>
+            <p class="text-muted small mb-3">Escribe un número</p>
+
+            <form id="studentForm" autocomplete="off">
+              <input type="hidden" id="studentId" />
+
+              <div class="mb-3">
+                <label class="form-label">Número</label>
+                <input class="form-control" id="word" required placeholder="Ej: 455" />
+              </div>
+
+              <div class="d-grid gap-2">
+                <!-- IMPORTANTE: type="button" para evitar recarga -->
+                <button class="btn btn-enviar btn-primary " type="button" id="btnenviar">
+                  <i class="bi bi-floppy"></i> Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!--Footer-->
+
+  <footer class="bg-dark">
+    <p class="py-4 text-center text-light mb-0">Juan José Giraldo - Copyright © 2026</p>
+  </footer>
+
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="/features/asyncAwait/AsyncAwait.js"></script>
+</body>
+
+</html>

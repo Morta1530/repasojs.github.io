@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  flex: 1;
+}
+
+.mi-navbar {
+    background-color: rgb(17, 99, 21);
+    border-radius: 0px 0px 5px 5px;
+    --bs-navbar-color:rgb(255, 255, 255) ;
+    --bs-navbar-hover-color: rgb(79, 214, 79);
+}    
+
+#btnUpdate {
+  display: none;
+}
+
+.navbar-brand{
+    --bs-navbar-brand-color:rgb(255, 255, 255) ;
+    --bs-navbar-brand-hover-color: rgb(79, 214, 79);
+}
+
+.nav-link{
+    --bs-navbar-brand-color:rgb(255, 255, 255) ;
+    --bs-navbar-brand-hover-color: rgb(79, 214, 79);
+
+}
+
